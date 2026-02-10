@@ -1,3 +1,18 @@
+:root {
+  --primary-color: #08415C;
+  --primary-color-2: #0b5a8c;
+  --secondary-color: #381b02;
+  --text-color: var(--secondary-color);
+  --muted-tan: #e4dfd9;
+  --sea-blue: #4fd2d7;
+  --sea-blue-2: #88f1f5;
+}
+
+h1 {
+  padding: 20px;
+  text-align: center;
+}
+
 nav {
   position: fixed;
   top: 0;
@@ -5,7 +20,8 @@ nav {
   width: 100%;
   z-index: 1000;
   height: 70px;
-  background-color: #b4b4b4;
+  background-color: var(--primary-color);
+  color: var(--muted-tan)
 }
 
 nav ul {
@@ -22,10 +38,12 @@ li {
   nav ul {
     padding: 10px;
     display: flex;
+    
   }
 
-  li {
+  nav ul li {
     margin: 0 20px;
+    font-size: 20px;
   }
 }
 
@@ -36,21 +54,30 @@ li {
     justify-content: space-around;
   }
 
-  li {
+  nav ul li {
     margin: 0 5px;
     font-size: 14px;
   }
 }
 
 a {
-  color: black;
+  color: var(--muted-tan);
   text-decoration: none;
   font-weight: bold;
+  border: 2px solid transparent;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+a:hover {
+  border: 2px solid var(--muted-tan);
+  color: var(--muted-tan);
+  cursor: pointer;
 }
 
 @media (max-width: 720px) {
   .card {
-    border: 1px solid #ccc;
+    border: 2px solid var(--secondary-color);
     border-radius: 5px;
     padding: 10px;
     margin: 10px;
@@ -87,7 +114,7 @@ a {
 
 @media (min-width: 721px) {
   .card {
-    border: 1px solid #ccc;
+    border: 2px solid var(--secondary-color);
     border-radius: 5px;
     padding: 20px;
     margin: 20px;
@@ -131,17 +158,20 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
+  background-color: var(--muted-tan);
 }
 
 main {
   margin-top: 70px;
   padding: 20px;
   flex: 1;
+  color: var(--secondary-color)
 }
 
 footer {
-  background-color: #b4b4b4;
+  background-color: var(--primary-color);
   text-align: center;
   padding: 10px;
   width: 100%;
+  color: var(--muted-tan)
 }
