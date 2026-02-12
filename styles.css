@@ -53,6 +53,9 @@ li {
 @media (max-width: 720px) {
   nav {
     height: 60px;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
   }
 
   nav ul {
@@ -68,6 +71,7 @@ li {
 
   nav ul li a {
     padding: 5px 0px;
+    flex: 0 0 auto;
   }
 }
 
