@@ -111,6 +111,10 @@ a:hover {
   cursor: pointer;
 }
 
+.card {
+  background-color: var(--muted-tan);
+}
+
 @media (max-width: 720px) {
   .card {
     border: 2px solid var(--secondary-color);
@@ -190,12 +194,24 @@ body {
   min-height: 100vh;
 }
 
+.waves-back {
+  background-image: url("waves.jpg");
+}
+
+.sand-back {
+  background-image: url("sand.jpg");
+}
+
 body {
   display: flex;
   flex-direction: column;
   margin: 0;
-  background-color: var(--muted-tan);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;  
+  background-attachment: fixed;
 }
+
 
 main {
   margin-top: 70px;
