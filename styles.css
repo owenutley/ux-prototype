@@ -11,7 +11,7 @@
   border: 2px solid var(--secondary-color);
   border-radius: 5px;
   padding: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 h1 {
@@ -78,7 +78,7 @@ li {
   }
 
   nav ul li a {
-    padding: 5px 0px;
+    padding: 5px 10px;
     flex: 0 0 auto;
   }
 }
@@ -142,14 +142,14 @@ a:hover {
 
   .contents-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
-    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 40px;
   }
 
   .contents-grid-large {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
-    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 40px;
   }
 }
 
@@ -173,19 +173,13 @@ a:hover {
   .borderless-card {
     border: 1px solid #cccccc00;
     border-radius: 5px;
-    padding: 20px;
-  }
-
-  .contents-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    padding: 40px;
   }
 
   .contents-grid-large {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 40px;
   }
 }
 
