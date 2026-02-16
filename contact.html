@@ -25,24 +25,33 @@
   </header>
   <main>
     <article class="hero-card">
-      <h1>Plan Your Visit</h1>
+      <h1>Contact Us</h1>
     </article>
-    <div class="contents-grid-large">
-      <article class="card">
-        <h2>Flights</h2>
-        <p>Book your flights to Taniti with our partner airlines.</p>
-        <a>View Flight Options</a>
-      </article>
-      <article class="card">
-        <h2>Lodging</h2>
-        <p>Find an available place to stay on Taniti.</p>
-        <a>View Lodging Options</a>
-      </article>
-      <article class="card">
-        <h2>Local Transportation</h2>
-        <p>Explore local transportation options on Taniti, including rental cars, taxis, and public buses.</p>
-        <a>View Transportation Options</a>
-      </article>
+    <section class="contact-section card">
+      <h1>Contact Taniti Tourism</h1>
+      <p>Have questions about your trip? Send us a message.</p>
+
+      <form class="contact-form" method="post">
+
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required autocomplete="name" />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required autocomplete="email" />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary">Send Message</button>
+
+      </form>
+    </section>
     </div>
   </main>
   <footer>
