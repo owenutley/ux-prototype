@@ -125,6 +125,57 @@ a:hover {
   font-size: 18px;
 }
 
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.center {
+  text-align: center;
+}
+
+input,
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 2px solid var(--secondary-color);
+  border-radius: 6px;
+  color: var(--secondary-color);
+  font-size: 16px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+button {
+  background-color: var(--muted-tan);
+  color: 2px solid var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+  border-radius: 5px;
+  padding: 5px;
+  margin: 0 40px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:active {
+  background-color: var(--secondary-color);
+  color: var(--muted-tan);
+}
+
 @media (max-width: 1079px) {
   main {
     margin: 70px 10px 10px 10px;
